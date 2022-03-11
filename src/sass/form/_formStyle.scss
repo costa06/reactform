@@ -1,0 +1,139 @@
+/* ========= Forms Styles ========= */
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    transition: 0.3s;
+}
+
+input {
+    height: 40px;
+    padding: 0 15px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    min-height: 45px;
+    line-height: 28px;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0 15px;
+    outline: none;
+    border: $border-width solid $color-border;
+    border-radius: $border-radius;
+    color: $white-color;
+
+    /* -- Placeholder -- */
+    &::placeholder {
+        color: $color-border;
+        opacity: 0.5;
+    }
+    &:focus {
+        border-color: $color-primary;
+    }
+}
+
+
+
+
+
+
+.form-group {
+    margin-bottom: 20px;
+    textarea {
+        min-height: 193px;
+        border: $border-width solid $color-border;
+        border-radius: $border-radius;
+        resize: none;
+        padding: 15px;
+        font-size: 16px;
+
+        &:focus {
+            border-color: $color-primary;
+        }
+    }
+}
+
+
+
+/*-------------------
+    Address Area  
+--------------------*/
+.contact-address {
+    display: flex;
+    margin-bottom: 4em;
+    margin-top: 2em;
+    .block-address {
+        margin: 0 10px;
+        .rn-address {
+            margin-top: 30px;
+            padding: 40px;
+            border-radius: 10px;
+            padding-top: 40px;
+            background: $color-border;
+            padding-bottom: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            padding: 30px 20px;
+            .icon {
+                color: $color-primary;
+                border-radius: 100%;
+                font-size: 40px;
+                display: inline-block;
+                margin-bottom: 17px;
+                line-height: 6px;
+            }
+            .inner {
+                h4 {
+                    &.title {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                    margin-bottom: 0;           
+                    a {
+                        color: $black-color;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                transform: translateY(-5px)
+            }
+        }
+    }
+}
+.contact-block {
+    background: #29292a;
+}
+.coords_contact {
+    display: flex;
+    form.formContact {
+        padding: 10px 25px;
+    }
+}
+
+.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
+.mapouter{position:relative;text-align:right;height:100%;width:100%;}
+
+.formulaire, .googleMap {
+    box-shadow: 0 0 20px rgb(255 255 255 / 5%);
+    transition: 0.3s;
+    margin: 15px;
+    border-radius: $border-radius;
+}

@@ -1,0 +1,32 @@
+
+$color-1: #fff;
+$color-primary: #059DFF;
+$color-primary-light: #059DFF;
+$color-secondary: #FB5343;
+$color-border: #eeeeee;
+$white-color: #ffffff;
+$black-color: #000000;
+$error-color: red;
+$success-color: green;
+
+$border-radius: 10px;
+$border-width: 2px;
+
+
+
+
+
+.Container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .FormContact {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+  }
+
+.page {
+  margin: 3em 0;
+}
+

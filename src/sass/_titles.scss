@@ -1,0 +1,13 @@
+.title-h1 {
+    h1 {
+        font: normal $bold 2.2em/1 $font-1;
+    }
+    margin-bottom: 1em;
+}
+
+.contact-block {
+    .title-h1 {
+        color: $white-color;
+        margin-top: 2em;
+    }
+}
